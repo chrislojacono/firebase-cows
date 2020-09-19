@@ -5,7 +5,6 @@ const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       // person is logged in
-      console.log(user);
       $('#auth').addClass('hide');
       $('#pasture').removeClass('hide');
       $('#navbar-logout-button').removeClass('hide');
