@@ -17,7 +17,6 @@ const getUser = (userObj) => {
           email: userObj.email,
           lastSignIn: userObj.metadata.lastSignIn,
         });
-
       } else {
         console.warn('User Exists');
       }
